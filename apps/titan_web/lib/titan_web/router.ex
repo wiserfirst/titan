@@ -20,7 +20,8 @@ defmodule TitanWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", TitanWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", TitanWeb do
+    pipe_through :api
+    post "/vms/:name", VmsController, :create
+  end
 end
