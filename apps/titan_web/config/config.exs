@@ -18,8 +18,8 @@ config :titan_web, TitanWeb.Endpoint,
 
 config :titan_web,
   basic_auth_config: [
-    username: "admin",
-    password: "simple_password"
+    username: "fieldglass",
+    password: "xdT7ERCISKw1uwIXUkTVRoeO0+QFIUU/dX0gzeWouxjEdNixTwhSdVq3IknJaBPK"
   ]
 
 # Import environment specific config. This must remain at the bottom
