@@ -45,6 +45,7 @@ defmodule TitanWeb.MixProject do
       {:gettext, "~> 0.11"},
       {:titan, in_umbrella: true},
       {:jason, "~> 1.0"},
+      {:basic_auth, "~> 2.2.2"},
       {:plug_cowboy, "~> 2.0"}
     ]
   end

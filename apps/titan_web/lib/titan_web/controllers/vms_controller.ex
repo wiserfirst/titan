@@ -1,6 +1,7 @@
 defmodule TitanWeb.VmsController do
   use TitanWeb, :controller
   alias Titan.{ErrorUtils, Request}
+  plug BasicAuth, use_config: {:titan_web, :basic_auth_config}
 
   def create(conn, params = %{"name" => vms_name}) do
     result =

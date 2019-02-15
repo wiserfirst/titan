@@ -16,6 +16,12 @@ config :titan_web, TitanWeb.Endpoint,
   render_errors: [view: TitanWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: TitanWeb.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :titan_web,
+  basic_auth_config: [
+    username: "admin",
+    password: "simple_password"
+  ]
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
